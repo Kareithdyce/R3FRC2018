@@ -53,7 +53,7 @@ function myFunction(){
                 totalPoints : 0};
     //Calculate points
     id.totalPoints += (id.revenue * .24); 
-    id.totalPoints += (10 * (id.revenue - id.revenue2)/id.revenue2);
+    id.totalPoints += (10 * (id.revenue - id.revenue2)/id.revenue);
     if(String(id.track) == 'Yes'){
         id.totalPoints += 5;
     }
