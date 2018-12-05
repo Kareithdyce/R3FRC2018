@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+
 <Title> Form </title>
 </head>
 <body>
@@ -23,7 +23,7 @@
 	<form>
 	  <div class="form-group">
 		<label for="Company Name">Company Name</label>
-		<input type="Company" class="form-control" id="company name" aria-describedby="Company" placeholder="Enter Company">
+		<input type="Company" class="form-control" id="company_name" aria-describedby="Company" placeholder="Enter Company">
 		<small id="Company" class="form-text text-muted">.</small>
 	  </div>
 
@@ -34,17 +34,12 @@
 	  </div>
 
 	  <div class="form-group">
-		<label for="Years in Business" placeholder="Select Years">Years in Business</label>
-		<select multuple class="form-control" id="years">
-		  <option>0-3</option>
-		  <option>4-5</option>
-		  <option>6-7</option>
-		  <option>7+</option>
-		</select>
-		</div>
-		
+			<label for="Enter Name Here">Years in Business</label>
+			<input type="years" class="form-control" id="years" placeholder="0">
+      </div>
+
 		<div class="form-group">
-				<label>Online Precense</label>
+				<label>Online Presence</label>
 				<select id="online" class= "form-control">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
@@ -60,12 +55,17 @@
 			</div>
 
 		<div class="form-group">
-				<label for="Revenue" placeholder="Enter Amount">Revenue</label>
+				<label for="Revenue" placeholder="Enter Amount">Last Year's Revenue (in thousands)</label>
 				<input type="Revenue" class="form-control" id="revenue">
 		</div>
-			
 
-	
+		<div class="form-group">
+				<label for="Revenue" placeholder="Enter Amount"> Year Before Last's Revenue (in thousands)</label>
+				<input type="Revenue" class="form-control" id="revenue2">
+		</div>
+
+
+
 
 	  <div class="form-group">
 		<label> State</label>
@@ -130,7 +130,7 @@
 	 </div>
 
 	 <div class="form-group">
-		<label> Short Term Goals</label> 
+		<label> Short Term Goals</label>
 		<textarea class="form-control" id="goals"   placeholder="Enter 300 word count"></textarea>
 	 </div>
 
@@ -143,12 +143,10 @@
 
 
 	 <div class="form-group">
-		<label> Type of oppertunity your company is looking for</label>
-		<textarea class="form-control" id="long term plan"   placeholder="Ex. Digital Marketing"></textarea>
+		<label> Type of opportunity your company is looking for</label>
+		<textarea class="form-control" id="longtermplan"   placeholder="Ex. Digital Marketing"></textarea>
 		<br>
 		<br>
-		<a href= "thankyou.html" class="btn btn-success btn btn-center btn-lg" href="#" role="button"> Submit</a>
-	 </div>
-
-
-	 
+		<a href= "thankyou.html" onclick="myFunction()" class="btn btn-success btn btn-center btn-lg" href="#" role="button"> Submit</a>
+		<script src="form.js"></script>
+	</div>
